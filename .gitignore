@@ -1,0 +1,10 @@
+
+# Local backups and private configuration
+*.bak
+.DS_Store
+.env
+__pycache__/
+*.pyc
+
+# Archived service-page backups (keep locally, don't publish)
+service-details/.*/

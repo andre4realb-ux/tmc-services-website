@@ -221,39 +221,8 @@ function openService(serviceKey) {
 }
 
 
-// Connect service cards to their details
-const serviceCards = document.querySelectorAll(".service-card");
-
-serviceCards.forEach((card, index) => {
-
-    const serviceKeys = [
-        "construction",
-        "housing",
-        "facilities",
-        "security",
-        "logistics",
-        "environmental",
-        "community",
-        "consulting",
-        "travel",
-        "oilgas"
-    ];
-
-    const link = card.querySelector("a");
-
-    if (link) {
-
-        link.addEventListener("click", function(event) {
-
-            event.preventDefault();
-
-            openService(serviceKeys[index]);
-
-        });
-
-    }
-
-});
+// Service cards use their normal HTML links.
+// No JavaScript interception is required.
 
 
 // Close service details

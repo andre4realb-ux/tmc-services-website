@@ -1391,3 +1391,208 @@ h2 span {
         bottom: 84px !important;
     }
 }
+
+
+/* ===== TC × TMC SERVICE DETAIL VISUAL SYSTEM ===== */
+.detail-page {
+    min-height: 100vh;
+    padding: 76px 22px;
+    color: #f4f1e8;
+    background:
+        radial-gradient(ellipse at 85% 8%, rgba(201,163,78,.13), transparent 34%),
+        linear-gradient(145deg, #061321 0%, #0b2035 55%, #071426 100%);
+}
+
+.detail-content {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 34px;
+    border: 1px solid rgba(201,163,78,.24);
+    border-radius: 20px;
+    background: rgba(8, 25, 43, .78);
+    box-shadow: 0 24px 65px rgba(0,0,0,.25);
+}
+
+.detail-photo {
+    width: 100%;
+    height: clamp(220px, 35vw, 390px);
+    margin: 0 0 30px;
+    border: 1px solid rgba(201,163,78,.35);
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.detail-content .eyebrow {
+    color: #d4b56b;
+    letter-spacing: .16em;
+    font-weight: 700;
+}
+
+.detail-content h1,
+.detail-content h2 {
+    color: #e0bd70;
+}
+
+.detail-content h1 {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.12;
+}
+
+.detail-content h2 {
+    margin-top: 34px;
+}
+
+.detail-content p,
+.detail-content li {
+    color: #e3e8ed;
+    line-height: 1.85;
+}
+
+.detail-content strong {
+    color: #fff;
+}
+
+.detail-content a:not(.btn) {
+    color: #e0bd70;
+}
+
+.detail-content .detail-actions {
+    align-items: center;
+    gap: 18px;
+}
+
+@media (max-width: 640px) {
+    .detail-page { padding: 35px 13px; }
+    .detail-content { padding: 20px 16px; }
+    .detail-photo { height: 220px; }
+}
+
+
+
+/* ===== TMC RESIDENTIAL HOME FEATURE ===== */
+.land-development {
+    position: relative;
+    overflow: hidden;
+    padding: 88px 6%;
+    color: #f5f3ed;
+    background:
+        radial-gradient(ellipse at 12% 85%, rgba(201,163,78,.13), transparent 38%),
+        linear-gradient(130deg, #071426 0%, #102b45 58%, #071426 100%);
+}
+
+.land-development-content {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr .95fr;
+    align-items: center;
+    gap: 54px;
+}
+
+.land-development-copy {
+    max-width: 590px;
+}
+
+.land-development .eyebrow {
+    color: #d5b36a;
+    font-weight: 700;
+    letter-spacing: .16em;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.land-development h2 {
+    color: #ffffff;
+    font-size: clamp(2rem, 3.5vw, 3.15rem);
+    line-height: 1.17;
+    margin: 0 0 24px;
+}
+
+.land-development h2 span {
+    display: block;
+    color: #d5b36a;
+    margin-top: 8px;
+}
+
+.land-development-description {
+    max-width: 540px;
+    color: #e1e8ef;
+    font-size: 1.04rem;
+    line-height: 1.85;
+    margin-bottom: 16px;
+}
+
+.land-development-note {
+    color: #d5b36a;
+    font-size: .92rem;
+    line-height: 1.7;
+    margin: 0 0 26px;
+}
+
+.land-development-image {
+    min-height: 390px;
+    width: 100%;
+    border-radius: 18px;
+    border: 1px solid rgba(213,179,106,.55);
+    background-image:
+        linear-gradient(0deg, rgba(4,15,27,.12), rgba(4,15,27,.02)),
+        url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=85");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 22px 55px rgba(0,0,0,.28);
+}
+
+@media (max-width: 760px) {
+    .land-development {
+        padding: 58px 22px;
+    }
+
+    .land-development-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .land-development-copy {
+        max-width: 100%;
+    }
+
+    .land-development-image {
+        min-height: 260px;
+    }
+}
+
+/* ===== TMC SERVICES BUTTON SPACING ===== */
+.services-section .section-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 48px auto 72px;
+    padding: 12px 0 18px;
+    width: 100%;
+}
+
+.services-section .section-action .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 54px;
+    padding: 16px 32px;
+    text-align: center;
+    line-height: 1.4;
+}
+
+@media (max-width: 600px) {
+    .services-section .section-action {
+        margin: 36px auto 58px;
+        padding: 10px 0 16px;
+    }
+
+    .services-section .section-action .btn {
+        min-height: 56px;
+        padding: 16px 25px;
+    }
+}
